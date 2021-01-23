@@ -26,7 +26,7 @@ document.onkeydown = function (e) {
     return false;
   }
 };
-// prevents right clicking
+prevents right clicking
 document.addEventListener("contextmenu", (e) => e.preventDefault());
 
 $(document).ready(function () {
