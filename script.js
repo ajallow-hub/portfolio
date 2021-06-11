@@ -4,29 +4,29 @@ imageContainer.addEventListener("click", () => {
   imageContainer.classList.toggle("zoomIn");
 });
 
-document.onkeydown = function (e) {
-  if (event.keyCode == 123) {
-    console.log("You cannot inspect Element");
-    return false;
-  }
-  if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
-    console.log("You cannot inspect Element");
-    return false;
-  }
-  if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
-    console.log("You cannot inspect Element");
-    return false;
-  }
-  if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
-    console.log("You cannot inspect Element");
-    return false;
-  }
-  if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
-    console.log("You cannot inspect Element");
-    return false;
-  }
-};
-document.addEventListener("contextmenu", (e) => e.preventDefault());
+// document.onkeydown = function (e) {
+//   if (event.keyCode == 123) {
+//     console.log("You cannot inspect Element");
+//     return false;
+//   }
+//   if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+//     console.log("You cannot inspect Element");
+//     return false;
+//   }
+//   if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
+//     console.log("You cannot inspect Element");
+//     return false;
+//   }
+//   if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+//     console.log("You cannot inspect Element");
+//     return false;
+//   }
+//   if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+//     console.log("You cannot inspect Element");
+//     return false;
+//   }
+// };
+// document.addEventListener("contextmenu", (e) => e.preventDefault());
 
 $(document).ready(function () {
   $(window).scroll(function () {
@@ -65,14 +65,14 @@ $(document).ready(function () {
 
   // typing text animation script
   var typed = new Typed(".typing", {
-    strings: ["YouTuber", "Web Dev", "Blogger", "Designer", "Freelancer"],
+    strings: ["YouTuber", "Web Dev", "Designer", "Freelancer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
   });
 
   var typed = new Typed(".typing-2", {
-    strings: ["YouTuber", "Web Dev", "Blogger", "Designer", "Freelancer"],
+    strings: ["YouTuber", "Web Dev", "Designer", "Freelancer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
