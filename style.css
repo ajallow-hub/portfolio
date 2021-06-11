@@ -189,12 +189,13 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banner.png") no-repeat center;
+    background: url("images/banner.png");
+    background-repeat: no-repeat;
     height: 100vh;
     color: #fff;
     min-height: 500px;
     background-size:cover;
-    background-attachment: fixed; 
+    background-attachment:inherit; 
     font-family: 'Ubuntu', sans-serif;
 }
 .home .max-width{
@@ -361,7 +362,6 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .projects .proje-content .card .box img{
-    /* margin-left: 30px; */
     max-width: 300px;
     height: 200px;
     margin: auto;
@@ -644,6 +644,7 @@ footer span a:hover{
 @media (max-width: 1300px) {
     .home .max-width{
         margin-left: 0px;
+        width: 100%;
     }
 }
 
